@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>İş Başvuru Formu</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="text-center bm-img-div mt-2">
+        <a href="#">
+          <img
+            src="https://cdn.logo.com/hotlink-ok/logo-social.png"
+            alt=""
+            class="bm-img"
+        /></a>
+      </div>
+
+      <h3 class="text-center mt-4 bm-head">İş Başvuru Formu</h3>
+
+      <!-- İLETİŞİM BİLGİLERİ EKLEME ALANI -->
+      <div class="card mt-4 close-div-one" id="close-div-one">
+        <div class="card-header">İletişim Bilgileri</div>
+
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="person-name" class="form-label">Adı:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="person-name"
+                  placeholder="Lütfen Adınızı Giriniz"
+                />
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="person-surname" class="form-label">Soyadı:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="person-surname"
+                  placeholder="Lütfen Soyadınızı Giriniz"
+                />
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="person-birthday" class="form-label">Yaşı:</label>
+                <input
+                  type="date"
+                  class="form-control"
+                  id="person-birthday"
+                  placeholder="Lütfen Yaşınızı Giriniz"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="person-email" class="form-label">Email:</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="person-email"
+                  placeholder="Lütfen Email Giriniz"
+                />
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="person-phone" class="form-label">Telefon:</label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="person-phone"
+                  placeholder="Lütfen Telefon Giriniz"
+                />
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="person-place" class="form-label">Konum:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="person-place"
+                  placeholder="Ör: Beşiktaş/İstanbul"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group d-flex mx-auto">
+            <label for="person-photo" class="form-label">Fotoğraf:</label>
+            <input
+              type="file"
+              class="form-control-file mx-2"
+              id="person-photo"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- İLETİŞİM BİLGİLERİ LİSTELEME ALANI -->
+      <div>
+        <h5 class="mb-4" id="listeleme-referans">İLETİŞİM BİLGİLERİ:</h5>
+
+        <div class="row">
+          <div class="col-md-3 imgBox" id="imgBox">
+            <img
+              id="image"
+              src="https://static.vecteezy.com/system/resources/previews/005/544/718/original/profile-icon-design-free-vector.jpg"
+              alt=""
+              style="height: 200px"
+              class="text-center img"
+            />
+          </div>
+          <div class="col-md-9">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Ad</th>
+                  <th>Soyad</th>
+                  <th>Doğum Tarihi</th>
+                  <th>Email</th>
+                  <th>Telefon</th>
+                  <th>Konum</th>
+                </tr>
+              </thead>
+              <tbody id="person-table"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="card-body soldier-card mt-4 mb-5">
+        <ul class="list-group mx-1 text-center">
+          <li class="soldier-li">
+            Askerlik Durumu (Sadece Erkek adaylar İçin):
+            <input type="checkbox" /><span class="mx-2">Yapıldı</span
+            ><input type="checkbox" /><span class="mx-2">Yapılmadı</span
+            ><input type="checkbox" /><span class="mx-2">Muaf</span>
+            <input type="checkbox" /><span class="mx-2">Tecilli</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- BECERİLER EKLEME ALANI -->
+      <div class="container-fluid mt-5 close-div-seven" id="close-div-seven">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card mt-4">
+              <div class="card-header">Diller</div>
+              <div class="card-body">
+                <div class="form-group">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <label for="person-lang" class="form-label"
+                          >Diller:</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="person-lang"
+                          placeholder="Lütfen Dil Giriniz"
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <label for="person-lang-level" class="form-label"
+                          >Seviye:</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="person-lang-level"
+                          placeholder="Örnek: B2"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <button onclick="addLanguage()" class="btn btn-primary mx-3">
+                  Dil Ekle
+                </button>
+                <button onclick="delLang()" class="btn btn-danger lang-delete">
+                  Tabloyu Temizle
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card mt-4">
+              <div class="card-header">Beceriler</div>
+              <div class="card-body">
+                <div class="form-group">
+                  <label for="person-skills" class="form-label"
+                    >Beceriler:</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="person-skills"
+                    placeholder="Lütfen Dilleri Giriniz"
+                  />
+                </div>
+                <button onclick="addSkills()" class="btn btn-primary">
+                  Beceri Ekle
+                </button>
+                <button
+                  onclick="delSkills()"
+                  class="btn btn-danger skills-delete"
+                >
+                  Tabloyu Temizle
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- BECERİLER LİSTELEME ALANI -->
+      <div class="container-fluid mt-5">
+        <div class="row rounded">
+          <div class="col-md-6">
+            <h5 class="p-2 text-center" id="listeleme-referans">DİLLER :</h5>
+          </div>
+          <div class="col-md-6">
+            <h5 class="p-2 text-center" id="listeleme-referans">BECERİLER :</h5>
+            <div class="border-bottom"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <table class="table language-table-deneme">
+              <thead>
+                <tr class="text-center">
+                  <th>Diller</th>
+                  <th>Seviye</th>
+                </tr>
+              </thead>
+              <tbody id="lang-table" class="text-center"></tbody>
+            </table>
+          </div>
+
+          <div class="col-md-6">
+            <table class="table skills-table-deneme">
+              <thead>
+                <tr></tr>
+              </thead>
+              <tbody id="skill-table" class="text-center"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <!-- REFERANSLAR EKLEME ALANI -->
+      <div class="card mt-5 close-div-two" id="close-div-two">
+        <div class="card-header">Referanslar</div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="ref-name" class="form-label">Adı:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="ref-name"
+                  placeholder="Lütfen Adını Giriniz"
+                />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="ref-surname" class="form-label">Soyadı:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="ref-surname"
+                  placeholder="Lütfen Soyadını Giriniz"
+                />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="ref-work" class="form-label"
+                  >Çalıştığı Kurum:</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="ref-work"
+                  placeholder="Lütfen Çalıştığı Kurum Giriniz"
+                />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="ref-contact" class="form-label">Telefon:</label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="ref-contact"
+                  placeholder="Lütfen Telefon No Giriniz"
+                />
+              </div>
+            </div>
+          </div>
+
+          <button onclick="addReference()" class="btn btn-primary">
+            Referans Ekle
+          </button>
+          <button onclick="delRef()" class="btn btn-danger ref-delete">
+            Tabloyu Temizle
+          </button>
+        </div>
+      </div>
+      <!-- REFERANSLAR LİSTELEME ALANI -->
+      <div class="mt-5">
+        <div class="row">
+          <div class="col-md-2">
+            <h5 class="mt-3" id="listeleme-referans">REFEREANSLAR:</h5>
+          </div>
+          <div class="col-md-10">
+            <table class="table ref-table-deneme">
+              <thead>
+                <tr class="text-center">
+                  <th>Ad</th>
+                  <th>Soyad</th>
+                  <th>Firma</th>
+                  <th>İletişim</th>
+                </tr>
+              </thead>
+              <tbody id="ref-table" class="text-center"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- EĞİTİM EKLEME ALANI -->
+      <div class="card mt-5 close-div-three" id="close-div-three">
+        <div class="card-header">Eğitim</div>
+        <div class="card-body">
+          <div class="form-group">
+            <label for="ed-name" class="form-label">Okul Adı:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="ed-name"
+              placeholder="Lütfen Okul Adını Giriniz"
+            />
+          </div>
+          <div class="form-group">
+            <label for="ed-date" class="form-label">Başlangıç Tarih:</label>
+            <input
+              type="date"
+              class="form-control"
+              id="ed-date"
+              placeholder="Lütfen Tarih Giriniz"
+            />
+          </div>
+          <div class="form-group">
+            <label for="ed-end-date" class="form-label">Bitiş Tarih:</label>
+            <input
+              type="date"
+              class="form-control"
+              id="ed-end-date"
+              placeholder="Lütfen Tarih Giriniz"
+            />
+          </div>
+          <div class="form-group">
+            <label for="ed-section" class="form-label">Bölüm:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="ed-section"
+              placeholder="Lütfen Bölüm Giriniz"
+            />
+          </div>
+          <button onclick="addEducation()" class="btn btn-primary">
+            Eğitim Ekle
+          </button>
+          <button onclick="delEd()" class="btn btn-danger ed-delete">
+            Tabloyu Temizle
+          </button>
+        </div>
+      </div>
+      <!-- EĞİTİM LİSTELEME ALANI -->
+      <div class="mt-5">
+        <div class="row">
+          <div class="col-md-2">
+            <h5 class="mt-3" id="listeleme-egitim">EĞİTİM:</h5>
+          </div>
+          <div class="col-md-10">
+            <table class="table ed-table-deneme">
+              <thead>
+                <tr class="text-center">
+                  <th>Okul Adı</th>
+                  <th>Başlangıç Tarih</th>
+                  <th>Bitiş Tarih</th>
+                  <th>Bölüm</th>
+                </tr>
+              </thead>
+              <tbody id="ed-table" class="text-center"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <!-- İŞ TECRÜBESİ EKLEME ALANI -->
+      <div class="card mt-5 close-div-four" id="close-div-four">
+        <div class="card-header">İş Tecrübesi</div>
+        <div class="card-body">
+          <div class="form-group">
+            <label for="work-name" class="form-label">Firma Adı:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="work-name"
+              placeholder="Lütfen Firma Adını Giriniz"
+            />
+          </div>
+          <div class="form-group">
+            <label for="work-date" class="form-label">Başlangıç Tarih:</label>
+            <input
+              type="date"
+              class="form-control"
+              id="work-date"
+              placeholder="Lütfen Tarih Giriniz"
+            />
+          </div>
+          <div class="form-group">
+            <label for="work-end-date" class="form-label">Bitiş Tarih:</label>
+            <input
+              type="date"
+              class="form-control"
+              id="work-end-date"
+              placeholder="Lütfen Tarih Giriniz"
+            />
+          </div>
+          <div class="form-group">
+            <label for="work-position" class="form-label">Pozisyon</label>
+            <input
+              type="text"
+              class="form-control"
+              id="work-position"
+              placeholder="Lütfen Pozisyon Giriniz"
+            />
+          </div>
+          <label for="work-desc" class="form-label">İş Tanımı</label>
+          <div class="form-group">
+            <textarea
+              class="text-area-width"
+              name=""
+              id="work-desc"
+              cols="158"
+              rows="2"
+            ></textarea>
+          </div>
+          <button onclick="addWork()" class="btn btn-primary">
+            Tecrübe Ekle
+          </button>
+          <button onclick="delWork()" class="btn btn-danger work-delete">
+            Tabloyu Temizle
+          </button>
+        </div>
+      </div>
+      <!-- İŞ TECRÜBE LİSTELEME ALANI -->
+      <div class="mt-5">
+        <div class="row">
+          <div class="col-md-2">
+            <h5 class="mt-2" id="listeleme-tecrübe">İŞ TECRÜBESİ:</h5>
+          </div>
+          <div class="col-md-10">
+            <table class="table work-table-deneme">
+              <thead>
+                <tr class="text-center">
+                  <th>Firma Adı</th>
+                  <th>Başlangıç Tarih</th>
+                  <th>Bitiş Tarih</th>
+                  <th>Pozisyon</th>
+                  <th>İş Tanımı</th>
+                </tr>
+              </thead>
+              <tbody id="work-table" class="wrap-work" classs></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <!-- PORJELER EKLEME ALANI -->
+      <div class="card mt-5 close-div-five" id="close-div-five">
+        <div class="card-header">Projeler</div>
+        <div class="card-body">
+          <div class="form-group">
+            <label for="proje-name" class="form-label">Proje Adı:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="proje-name"
+              placeholder="Lütfen Proje Adını Giriniz"
+            />
+          </div>
+          <div class="form-group">
+            <label for="proje-date" class="form-label">Tarih:</label>
+            <input
+              type="date"
+              class="form-control"
+              id="proje-date"
+              placeholder="Lütfen Tarih Giriniz"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="proje-desc" class="form-label">Açıklama:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="proje-desc"
+              placeholder="Lütfen Proje Açıklaması Giriniz"
+            />
+          </div>
+          <button onclick="addProject()" class="btn btn-primary">
+            Proje Ekle
+          </button>
+          <button onclick="delPro()" class="btn btn-danger pro-delete">
+            Tabloyu Temizle
+          </button>
+        </div>
+      </div>
+      <!-- PROJELER LİSTELEME ALANI -->
+      <div class="mt-5">
+        <div class="row">
+          <div class="col-md-2">
+            <h5 class="mt-3" id="listeleme-proje">PROJELER:</h5>
+          </div>
+          <div class="col-md-10">
+            <table class="table pro-table-deneme">
+              <thead>
+                <tr class="text-center">
+                  <th>Proje Adı</th>
+                  <th>Tarih</th>
+                  <th>Açıklama</th>
+                </tr>
+              </thead>
+              <tbody id="proje-table" class=""></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <!-- SERTİFİKA EKLEME ALANI -->
+      <div class="card mt-5 close-div-six" id="close-div-six">
+        <div class="card-header">Sertifikalar</div>
+        <div class="card-body">
+          <div class="form-group">
+            <label for="ser-name" class="form-label">Sertifika Adı:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="ser-name"
+              placeholder="Lütfen Sertifika Adını Giriniz"
+            />
+          </div>
+          <div class="form-group">
+            <label for="ser-date" class="form-label">Tarih:</label>
+            <input
+              type="date"
+              class="form-control"
+              id="ser-date"
+              placeholder="Lütfen Tarih Giriniz"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="ser-org" class="form-label">Alınan Kurum:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="ser-org"
+              placeholder="Lütfen Alınan Kurumun Adını Giriniz"
+            />
+          </div>
+          <div class="form-group">
+            <label for="ser-desc" class="form-label">Açıklama:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="ser-desc"
+              placeholder="Lütfen Proje Açıklaması Giriniz"
+            />
+          </div>
+
+          <button onclick="addSer()" class="btn btn-primary">
+            Sertfika Ekle
+          </button>
+          <button onclick="delSer()" class="btn btn-danger ser-delete">
+            Tabloyu Temizle
+          </button>
+        </div>
+      </div>
+      <!-- SERTİFİKA LİSTELEME ALANI -->
+      <div class="mt-5">
+        <div class="row">
+          <div class="col-md-2">
+            <h5 class="mt-3" id="listeleme-ser">SERTİFİKALAR:</h5>
+          </div>
+          <div class="col-md-10">
+            <table class="table ser-table-deneme">
+              <thead>
+                <tr class="text-center">
+                  <th>Serifika Adı</th>
+                  <th>Tarih</th>
+                  <th>Sertifikanın Alındığı Kurum</th>
+                  <th>Sertifikanın Açıklama</th>
+                </tr>
+              </thead>
+              <tbody id="ser-table" class="text-center"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIL ATMA BUTONU -->
+    <div class="container">
+      <div class="row text-center m-3 mailSend" id="mailSend">
+        <a
+          onclick="finish()"
+          id="mailSend"
+          class="btn btn-primary text-center mx-auto mailSendHover"
+          href="mailto:xxxxxx@gmail.com"
+        >
+          Mail Yolla
+        </a>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

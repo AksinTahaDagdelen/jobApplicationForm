@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+h3 {
+  color: #5e72e4;
+  font-weight: bold;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+.card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.card-header {
+  background-color: #5e72e4;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 10px 10px 0 0;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.form-label {
+  font-weight: bold;
+}
+
+.btn-primary {
+  background-color: #5e72e4;
+  border-color: #5e72e4;
+}
+
+.btn-primary:hover {
+  background-color: #304ffe;
+  border-color: #304ffe;
+}
+
+.list-group-item {
+  background-color: #f8f9fa;
+  border-color: #d2d2d2;
+}
+body img {
+  height: 200px !important;
+  width: 200px !important;
+}
+
+body h5 {
+  font-family: "Jost", sans-serif;
+  font-weight: bolder;
+  margin-left: 5%;
+}
+.bm-head {
+  font-family: "Courgette", cursive;
+  font-size: xx-large;
+  font-weight: bolder !important;
+}
+.bm-img {
+  height: 100px !important;
+}
+.bm-img-div {
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+.wrap-work {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.ref-delete,
+.lang-delete,
+.skills-delete,
+.ed-delete,
+.work-delete,
+.pro-delete,
+.ser-delete {
+  visibility: visible;
+}
+
+.soldier-li {
+  list-style-type: none;
+}
+.soldier-card {
+  border: 3px solid #5e72e4;
+  border-radius: 20px;
+}
+.close-div-one,
+.close-div-two,
+.close-div-three,
+.close-div-four,
+.close-div-five,
+.close-div-six,
+.close-div-seven {
+  /* box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset; */
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+.close-div-one:hover,
+.close-div-two:hover,
+.close-div-three:hover,
+.close-div-four:hover,
+.close-div-five:hover,
+.close-div-six:hover,
+.close-div-seven:hover {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.mailSendHover:hover {
+  color: #5e72e5;
+  background-color: white;
+  border: 2px solid #5e72e5;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+}
+.mailSendHover {
+  margin-top: 50px !important;
+}
+
+/* RESPONSIVE */
+@media only screen and (max-width: 1000px) {
+  .text-area-width {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .text-area-width {
+    width: 100%;
+  }
+}
